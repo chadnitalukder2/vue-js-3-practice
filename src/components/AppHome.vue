@@ -1,8 +1,7 @@
 <template>
     <h1>Email : {{ email }}</h1>
-    <h1> Mobile : {{ mobile = 999 }}</h1>
-<h1> Mobile : {{ mobile}}</h1>
-<h1>Name : {{ getName("Chadni talukder") }} </h1>
+   <h1>Name : {{ getName("puja das") }} </h1>
+   <h1>Data : {{ getData().email }} </h1>
 </template>
 <script>
 export default {
@@ -10,11 +9,19 @@ export default {
  data(){
     return{
         email: "puja@124test.com",
-        mobile: "01753507283",
-        getName(x){
-            return (x)
-        }
+      
     }
+ },
+ methods: {
+    getName(name){
+            return (name);
+        },
+        getData(){
+            return{
+                name: "chadni talukder",
+                email: this.email
+            }
+        }
  }
 }
 </script>
