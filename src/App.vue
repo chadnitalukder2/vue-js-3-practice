@@ -1,18 +1,18 @@
 <template>
   <Home/> 
-  <Interpolation/>
+  <Event/>
 </template>
 
 <script>
 import Home from './components/AppHome.vue';
-import Interpolation from './components/A_Interpolation.vue';
+import Event from './components/A_Event.vue';
 
 
 export default {
     name: 'App',
     components: {
         Home,
-        Interpolation,
+        Event,
     }
 }
 </script>
