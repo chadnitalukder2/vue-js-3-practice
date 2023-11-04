@@ -1,18 +1,18 @@
 <template>
-<img alt="Vue logo" src="./assets/logo.png">
-<HelloWorld msg="Welcome to Your Vue.js App" />
-<Home></Home>
+  <Home/> 
+  <Interpolation/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
-import Home from './components/AppHome.vue'
+import Home from './components/AppHome.vue';
+import Interpolation from './components/A_Interpolation.vue';
+
 
 export default {
     name: 'App',
     components: {
-        HelloWorld,
         Home,
+        Interpolation,
     }
 }
 </script>
