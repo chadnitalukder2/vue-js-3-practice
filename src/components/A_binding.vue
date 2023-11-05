@@ -1,5 +1,6 @@
 <template>
-<div>
+    <p></p>
+<!-- <div>
     <h1>Get checkbox & radio button value</h1>
     <h3>Technology</h3>
  
@@ -18,26 +19,26 @@
 
     <h4>Technology : {{ technology }}</h4>
    <h4>I am a : {{ Profession }}</h4>
-</div>
+</div> -->
 </template>
 
   
 <script>
-export default {
-    data() {
-        return {
-            technology: [],
-            Profession: null,
-        }
-    },
-    methods: {
-        getData() {
+// export default {
+//     data() {
+//         return {
+//             technology: [],
+//             Profession: null,
+//         }
+//     },
+//     methods: {
+//         getData() {
 
-            console.log("values : ", this.email, this.password);
-        }
-    },
+//             console.log("values : ", this.email, this.password);
+//         }
+//     },
 
-}
+// }
 </script>
 
   
