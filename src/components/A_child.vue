@@ -2,6 +2,7 @@
    <h2>Child Component</h2>
    <h2>Name: {{ name }}</h2>
    <h2>Name: {{ Data.name }}</h2>
+   <h2>Email: {{ Data.email }}</h2>
    <button @click="getData()">Call me</button>
 </template>
 

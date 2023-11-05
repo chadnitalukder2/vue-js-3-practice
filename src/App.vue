@@ -1,13 +1,16 @@
 <template>
-  <Parent/> 
+ <div></div>
+ <Home/>
   <!--  
+  <Parent/> 
   <Event/>
   <Binding/>
   <condition/> -->
 </template>
 
 <script>
-import Parent from './components/A_parent.vue';
+import Home from './components/A_Home.vue'
+//import Parent from './components/A_parent.vue';
 // import Event from './components/A_Event.vue';
 // import Binding from './components/A_binding.vue';
 // import condition from './components/A_condition.vue';
@@ -15,7 +18,8 @@ import Parent from './components/A_parent.vue';
 export default {
   name: "App",
   components: {
-    Parent,
+    Home
+    //Parent,
     // Event,
     // Binding,
     // condition,
