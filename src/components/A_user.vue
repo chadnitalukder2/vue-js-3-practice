@@ -1,31 +1,29 @@
 <template>
-   <h2>User Component</h2>
-  {{ item }}
-   <h2>{{ item.name }}</h2>
-  <h2>{{ item.email }}</h2> 
+  <div class="user">
+    <h2>{{ data?.name }}</h2>
+   <h2>{{ data?.email }}</h2> 
+   <button @click=" getData(data?.name)">allert User Name</button>
+  </div>
+  
+ 
 </template>
 
 <script>
     export default {
         name:"A_user",
         props:[
-            'data'
+            'data',
+            'getData',
         ],
-        data(){
-            return{
-                item:{}
-            }
-        },
-        mounted(){
-            this.item = JSON.parse(this.data)
-        }
-      
-        
-           
-        
+    
     }
 </script>
 
 <style lang="scss" scoped>
-
+.user{
+    background: skyblue;
+    border-bottom: 1px solid;
+    padding: 10px;
+    margin-bottom: 15px;
+}
 </style>
