@@ -52,6 +52,8 @@ export default {
 
 <style lang="scss" scoped></style> -->
 
+<!-- ============================================================= -->
+
 <template>
   <h1>Props in vue Js 3</h1>
   <Student :name="name" />
