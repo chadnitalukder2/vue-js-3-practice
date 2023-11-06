@@ -54,13 +54,13 @@ export default {
 
 <!-- ============================================================= -->
 
-<template>
+<!-- <template>
   <h1>Props in vue Js 3</h1>
   <Student :name="name" />
   <Teacher name="Nitesh" />
-</template>
+</template> -->
 
-<script>
+<!-- <script>
 import Student from "./A_student-props.vue";
 import Teacher from "./A_Teacher-props.vue";
 export default {
@@ -75,6 +75,31 @@ export default {
     }
   },
 };
+</script> -->
+
+<!-- ===================================================================== -->
+
+<template>
+  <div>
+    <h1>Non-Props Data</h1>
+    <nonProps item="some Data" name="user-cmp" />
+  </div>
+</template> 
+
+<script>
+import nonProps from "./A_non-props.vue";
+export default {
+  name: "A_Home",
+
+  components: {
+    nonProps,
+  },
+};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+h1{
+
+    color:orange;
+}
+</style>

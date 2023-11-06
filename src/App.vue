@@ -1,7 +1,8 @@
 <template>
  <div></div>
- <From/> 
+ <Home/>
   <!--  
+    <From/> 
     <Ref/> 
     <Home/>
   <Parent/> 
@@ -11,9 +12,10 @@
 </template>
 
 <script>
-import From from './components/A_from.vue';
+
+//import From from './components/A_from.vue';
 //import Ref from './components/A_Raf.vue';
-//import Home from './components/A_Home.vue';
+import Home from './components/A_Home.vue';
 //import Parent from './components/A_parent.vue';
 // import Event from './components/A_Event.vue';
 //import Binding from './components/A_binding.vue';
@@ -22,9 +24,10 @@ import From from './components/A_from.vue';
 export default {
   name: "App",
   components: {
-    From
+    
+   // From
    // Ref
-    //Home
+    Home
    // Parent,
     // Event,
     // Binding,
