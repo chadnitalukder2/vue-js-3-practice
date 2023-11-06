@@ -1,6 +1,6 @@
 <template>
  <div></div>
- <Parent/> 
+ <Ref/> 
   <!--  
     <Home/>
   <Parent/> 
@@ -10,8 +10,9 @@
 </template>
 
 <script>
+import Ref from './components/A_Raf.vue'
 //import Home from './components/A_Home.vue'
-import Parent from './components/A_parent.vue';
+//import Parent from './components/A_parent.vue';
 // import Event from './components/A_Event.vue';
 //import Binding from './components/A_binding.vue';
 // import condition from './components/A_condition.vue';
@@ -19,8 +20,9 @@ import Parent from './components/A_parent.vue';
 export default {
   name: "App",
   components: {
+    Ref
     //Home
-    Parent,
+   // Parent,
     // Event,
     // Binding,
     // condition,
