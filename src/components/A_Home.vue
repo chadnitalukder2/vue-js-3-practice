@@ -1,6 +1,6 @@
-<template>
+<!-- <template lang="scss">
 <div>
-    <h1>Reuse Component</h1>
+    <h1>Reuse Component Like Props</h1>
     <ul>
         <li v-for="(item, index) in users" :key="index">
             <User :data="item" :getData="getData" />
@@ -8,7 +8,9 @@
     </ul>
     <User />
 </div>
-</template>
+</template> -->
+
+<!-- 
 
 <script>
 import User from "./A_user.vue";
@@ -19,7 +21,7 @@ export default {
     },
     methods: {
         getData(name) {
-            alert( name)
+            alert(name)
         }
     },
     data() {
@@ -43,6 +45,33 @@ export default {
             ],
         };
     },
+};
+</script> -->
+
+<!-- 
+
+<style lang="scss" scoped></style> -->
+
+<template>
+  <h1>Props in vue Js 3</h1>
+  <Student :name="name" />
+  <Teacher name="Nitesh" />
+</template>
+
+<script>
+import Student from "./A_student-props.vue";
+import Teacher from "./A_Teacher-props.vue";
+export default {
+  name: "A_Home",
+  components: {
+    Student,
+    Teacher,
+  },
+  data() {
+    return {
+      name: "Bruce",
+    }
+  },
 };
 </script>
 

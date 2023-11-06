@@ -2,6 +2,7 @@
  <div></div>
  <Home/>
   <!--  
+    <Home/>
   <Parent/> 
   <Event/>
   <Binding/>
@@ -12,7 +13,7 @@
 import Home from './components/A_Home.vue'
 //import Parent from './components/A_parent.vue';
 // import Event from './components/A_Event.vue';
-// import Binding from './components/A_binding.vue';
+//import Binding from './components/A_binding.vue';
 // import condition from './components/A_condition.vue';
 
 export default {
