@@ -1,7 +1,8 @@
 <template>
  <div></div>
- <Slots/> 
+ <dynamicHome/> 
   <!--  
+    <dynamicHome/> 
     <Slots/> 
     <Watchers/>
     <Computed/>
@@ -15,7 +16,8 @@
 </template>
 
 <script>
-import Slots from './components/A_slots.vue';
+import dynamicHome from './Dynaminc-component/A_dyHome.vue';
+//import Slots from './components/A_slots.vue';
 //import Watchers from './components/A_Watchers.vue';
 //import Computed from './components/A_computed-property.vue';
 //import From from './components/A_from.vue';
@@ -29,7 +31,8 @@ import Slots from './components/A_slots.vue';
 export default {
   name: "App",
   components: {
-    Slots,
+    dynamicHome,
+   // Slots,
    // Watchers,
     //Computed,
    // From,
