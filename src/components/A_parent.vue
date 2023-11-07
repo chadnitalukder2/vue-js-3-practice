@@ -36,7 +36,8 @@ import Child from './A_child.vue'
 <template>
  <h1>Send Data Child to parent in vue js</h1>
  <h2> User Name : {{ name }}</h2>
- <Child :getUser="getUserName"/>
+ <Child :getUser="getUserName" ref="puja"/>
+ <button @click="buttonClick()">click</button>
 
 </template>
 
@@ -45,7 +46,8 @@ import Child from './A_child.vue';
   export default {
     name:"A_parent",
     components:{
-      Child
+      Child,
+
     },
     data(){
       return{
@@ -55,6 +57,9 @@ import Child from './A_child.vue';
     methods:{
       getUserName(name){
        this.name =name
+      },
+      buttonClick(){
+      console.log(this.$refs.puja,"hello");
       }
     }
   }

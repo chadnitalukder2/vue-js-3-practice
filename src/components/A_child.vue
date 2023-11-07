@@ -38,6 +38,11 @@
             return{
                 userName: "Peter"
             }
+        },
+        mrthods:{
+            child(){
+                console.log("child");
+            }
         }
         
     }
