@@ -1,7 +1,8 @@
 <template>
  <div></div>
- <Watchers/> 
+ <Slots/> 
   <!--  
+    <Slots/> 
     <Watchers/>
     <Computed/>
     <From/> 
@@ -14,7 +15,8 @@
 </template>
 
 <script>
-import Watchers from './components/A_Watchers.vue';
+import Slots from './components/A_slots.vue';
+//import Watchers from './components/A_Watchers.vue';
 //import Computed from './components/A_computed-property.vue';
 //import From from './components/A_from.vue';
 //import Ref from './components/A_Raf.vue';
@@ -27,7 +29,8 @@ import Watchers from './components/A_Watchers.vue';
 export default {
   name: "App",
   components: {
-    Watchers,
+    Slots,
+   // Watchers,
     //Computed,
    // From,
    // Ref,
