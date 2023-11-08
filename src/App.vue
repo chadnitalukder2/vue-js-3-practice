@@ -1,7 +1,12 @@
 <template>
  <div></div>
- <dynamicHome/> 
+ <router-link to="/"> Home Page </router-link><br><br>
+ <router-link to="/Login"> Login Page </router-link><br><br>
+ <router-link to="/Profile"> Profile Page </router-link>
+
+ <router-view/>
   <!--  
+   
     <dynamicHome/> 
     <Slots/> 
     <Watchers/>
@@ -16,7 +21,8 @@
 </template>
 
 <script>
-import dynamicHome from './Dynaminc-component/A_dyHome.vue';
+
+//import dynamicHome from './Dynaminc-component/A_dyHome.vue';
 //import Slots from './components/A_slots.vue';
 //import Watchers from './components/A_Watchers.vue';
 //import Computed from './components/A_computed-property.vue';
@@ -31,7 +37,8 @@ import dynamicHome from './Dynaminc-component/A_dyHome.vue';
 export default {
   name: "App",
   components: {
-    dynamicHome,
+    
+  //  dynamicHome,
    // Slots,
    // Watchers,
     //Computed,
