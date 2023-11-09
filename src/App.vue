@@ -1,8 +1,14 @@
 <template>
- <div></div>
+ <div>Home</div>
  <router-link to="/"> Home Page </router-link><br><br>
- <router-link to="/Login"> Login Page </router-link><br><br>
- <router-link to="/Profile"> Profile Page </router-link>
+ <router-link to="/login"> Login Page </router-link><br><br>
+ <router-link to="/profile/nitesh">Nitesh's Profile Page </router-link><br><br>
+ <router-link to="/profile/puja">Puja's Profile Page </router-link><br><br>
+ <router-link to="/profile/petter">Piter's Profile Page </router-link><br><br>
+
+ <router-link :to="{ name: 'login'}">
+  User
+</router-link>
 
  <router-view/>
   <!--  

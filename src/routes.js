@@ -10,13 +10,13 @@ const routes=[
         component: routerHome
     },
     {
-        name: "A_profile",
-        path:'/',
+        name: "profile",
+        path:'/profile/:name/:id',
         component: Profile
-    },
+     },
     {
-        name: "A_login",
-        path:'/',
+        name: "login",
+        path:'/avbhbhuhjj/uhjij',
         component: Login
     },
 ];
